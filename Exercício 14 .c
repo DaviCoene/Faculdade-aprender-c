@@ -90,18 +90,18 @@ int main() {
         printf("Digite a coluna da peca que voce deseja mover (comecando em 0): ");
         scanf("%d", &coluna);
         
-		printf("Digite a direção do movimento \n'-1'-> cima; \n'1'-> baixo; \n'-2'-> esquerda; \n'2'-> direita: ");
+		printf("Digite a direÃ§Ã£o do movimento \n'-1'-> cima; \n'1'-> baixo; \n'-2'-> esquerda; \n'2'-> direita: ");
         scanf("%d", &dLinha);
         dColuna = dLinha / 2;
         dLinha = dLinha % 2;
         if (can_move(tabuleiro, linha, coluna, dLinha, dColuna)) {
             move(tabuleiro, linha, coluna, dLinha, dColuna);
             if (is_solved(tabuleiro)) {
-                printf("\nParabéns, você resolveu o quebra-cabeça!\n");
+                printf("\nParabÃ©ns, vocÃª resolveu o quebra-cabeÃ§a!\n");
                 break;
             }
         } else {
-            printf("\nMovimento inválido.\n");
+            printf("\nMovimento invÃ¡lido.\n");
         }
     }
     return 0;
